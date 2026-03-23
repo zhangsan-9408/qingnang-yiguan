@@ -340,4 +340,29 @@ const tasks = ref({
 
 .streak-banner {
   background: linear-gradient(135deg, #8b4513 0%, #d2691e 100%);
-  border-radius: 12px
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.streak-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: white;
+}
+
+.streak-icon {
+  font-size: 1.5rem;
+}
+
+.streak-text {
+  font-weight: 600;
+}
+
+.streak-bonus {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+</style>
