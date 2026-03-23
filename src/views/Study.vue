@@ -336,4 +336,130 @@ const completeLesson = () => {
   bottom: 0;
   background: rgba(0,0,0,0.7);
   display: flex;
-  align-items:
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.lesson-content {
+  background: linear-gradient(135deg, #f5f0e8 0%, #ebe5d9 100%);
+  border-radius: 16px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow: hidden;
+  border: 3px solid #8b5a2b;
+}
+
+.lesson-header {
+  background: linear-gradient(135deg, #3d2418 0%, #5a3d2b 100%);
+  color: #d4a574;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lesson-header h3 {
+  margin: 0;
+}
+
+.close-btn {
+  background: transparent;
+  border: none;
+  color: #d4a574;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.lesson-body {
+  padding: 1.5rem;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.lesson-text {
+  color: #2c1810;
+  line-height: 1.6;
+}
+
+.lesson-text h4 {
+  color: #8b5a2b;
+  margin: 1rem 0 0.5rem;
+}
+
+.quiz-section {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #d4c4a8;
+}
+
+.quiz-section h4 {
+  color: #8b5a2b;
+  margin-bottom: 1rem;
+}
+
+.quiz-item {
+  margin-bottom: 1rem;
+}
+
+.quiz-question {
+  color: #2c1810;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.quiz-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.quiz-option {
+  background: linear-gradient(135deg, #f5f0e8 0%, #ebe5d9 100%);
+  border: 1px solid #c9b896;
+  padding: 0.75rem;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.3s;
+}
+
+.quiz-option:hover:not(:disabled) {
+  border-color: #8b5a2b;
+}
+
+.quiz-option.selected {
+  border-color: #8b5a2b;
+  background: linear-gradient(135deg, #d4a574 0%, #c9b896 100%);
+}
+
+.quiz-option.correct {
+  border-color: #2e8b57;
+  background: rgba(46, 139, 87, 0.2);
+}
+
+.quiz-option.wrong {
+  border-color: #dc3545;
+  background: rgba(220, 53, 69, 0.2);
+}
+
+.lesson-footer {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #d4c4a8;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.submit-quiz,
+.complete-btn {
+  background: linear-gradient(135deg, #8b5a2b 0%, #d4a574 100%);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+</style>
